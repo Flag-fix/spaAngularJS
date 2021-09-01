@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Single Page Application</title>
+</head>
+
+<body ng-app="App">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Single Page Application com Angular JS</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#/pagina1"><span class="glyphicon glyphicon-book"></span> Página 1</a></li>
+                <li><a href="#/pagina2"><span class="glyphicon glyphicon-comment"></span> Página 2</a></li>
+                <li><a href="#/pagina3"><span class="glyphicon glyphicon-comment"></span> Página 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div ng-view class="jumbotron text-center"></div>
+    <footer class="text-center">
+        <p>Essa Página não atualiza! Ela é uma Single Page Application
+        </p>
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</html>
